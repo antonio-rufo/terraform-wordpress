@@ -19,6 +19,6 @@ chmod -R 755 wp-content
 chown -R apache:apache wp-content
 chkconfig httpd on
 service httpd start
-cat > /var/www/html/wp-config.php <<'TXT'
-# INSERT THE wp-config.php contents here. Then update ASG_DESIRED_CAPACITY to "2" in terraform.tfvars
-TXT
+#cat > /var/www/html/wp-config.php <<'TXT'
+## INSERT THE wp-config.php contents here. Then update ASG_DESIRED_CAPACITY to "2" in terraform.tfvars
+#TXT
