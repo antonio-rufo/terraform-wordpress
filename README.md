@@ -14,7 +14,7 @@ Steps:
   - Using credentials, create the private.auto.tfvars
   - Create your keypair in folder. Run: ssh-keygen -f mykey
   - Run Terraform
-  - It will output ELB and RDS endpoints. Using ELB DNS, login and create WP database connections
-  - Additional step is to copy wp-config.php contents to /scripts/script-wpsetup.sh
-  - In the terraform.tfvars, adjust the ASG_DESIRED_CAPACITY to "2" or more. To enable HA for the WP EC2 instances
+  - It will output ELB and RDS endpoints. Using ELB DNS, login and create WP database and its connections
+  - Aside from setting up wp-config.php on running EC2. Additional step is to copy wp-config.php contents to /scripts/script-wpsetup.sh
+  - In the terraform.tfvars, adjust the ASG_DESIRED_CAPACITY to "2" to enable HA for the WP EC2 instances
   - Run Terraform again. You now have a fully functioning HA Wordpress suite. 
