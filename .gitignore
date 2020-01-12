@@ -1,0 +1,5 @@
+private.auto.tfvars
+.terraform/
+*tfstate*
+mykey
+mykey.pub
